@@ -60,10 +60,10 @@ public class Methods {
     //10
     public static void changeNumber() {
         int[] array = {0, 1, 1, 0, 0, 1, 0};
-        for (int i =0,j = 0;i < array.length; i++, j--);
+        for (int i =0,j = 0;i < array.length; i++, j--){
         array[i] = i;
-        array[j] = i++;
-        System.out.println(array[i, j]);
+        array[j] = i++;}
+        System.out.println(array);
     }
 
     //11
@@ -74,20 +74,22 @@ public class Methods {
     }
 
     //12
-    public static int arrayToReduce() {
+    public static void arrayToReduce() {
         int[] array = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 11};
-        for (int i  = 0; i < array.length; i = i * 2);
-        if (array[i] < 6);
+        for (int i  = 0; i < array.length; i++);{
+            if (array[i] < 6) array[i] = array[i] * 2);}
+        System.out.println(array);
     }
 
     //13
     public static void squareArray() {
         int[][] square = new int[5][5];
         for (int i = 0; i < square.length; i++) {
-            for (int j = 0; j < square.length(i); j++) {
-                square[i][j] == 1;
+            for (int j = 0; j < square[i].length; j++) {
+                if (square[i][j] == 1);
                 square[square.length - 1 - i][i] = 1;
             }
+
         }
     }
     //14
