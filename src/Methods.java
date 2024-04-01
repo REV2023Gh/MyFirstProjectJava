@@ -10,17 +10,13 @@ public class Methods {
         int a = 10;
         int b = 20;
         int c = a + b;
-        if (c >= 0) {
-            System.out.println("Сумма положительная");
-        } else {
-            System.out.println("Сумма отрицательная");
-        }
+        System.out.println(c >= 0 ? "Сумма положительная" : "Сумма отрицательная");
     }
     //3
     public static void printColor() {
         int value;
         value = 30;
-        if (value < 0) {
+        if (value <= 0) {
             System.out.println("Красный");
         } else if (value <= 100) {
             System.out.println("Желтый");
@@ -31,29 +27,21 @@ public class Methods {
     //№4
     public static void compareNumbers() {
         int a = 5, b = 10;
-        if (a >= b) {
-            System.out.println("a >= b");
-        } else {
-            System.out.println("a < b");
-        }
+            System.out.println(a >= b ? "a >= b" : "a < b");
     }
     //№5
     public static boolean fromTenToTwenty(int a, int i) {
         int c = a + i;
-        c >= 10 && c <= 20 ? return true :return false;
+        return c >= 10 && c <= 20 ;
     }
     //№6
     public static int checkPrintSign(int data) {
-        if (data < 0) {
-            System.out.println("Число отрицательное");
-        } else {
-            System.out.println("Число положительное");
-        }
+        System.out.println(data < 0 ? "Число отрицательное" : "Число положительное");
         return data;
     }
     //№7
-    public static int isPositiveNumber(int num) {
-        num < 0 ? return true :return false;
+    public static boolean isPositiveNumber(int num) {
+        return num < 0;
     }
     //№8
     public static int printStringInConsole(int d) {
@@ -66,11 +54,7 @@ public class Methods {
     //9
     public static boolean isLeapYear() {
         int year = 2004;
-        if (year % 4 == 0) &&(year % 100 != 0) || (year % 400 == 0) {
-            return true;
-        } else{
-            return false;
-        }
+        return year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
     }
 
     //10
@@ -93,7 +77,7 @@ public class Methods {
     public static int arrayToReduce() {
         int[] array = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 11};
         for (int i  = 0; i < array.length; i = i * 2);
-            if (array[i] < 6);
+        if (array[i] < 6);
     }
 
     //13
