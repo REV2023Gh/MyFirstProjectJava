@@ -69,16 +69,17 @@ public class Methods {
     //11
     public static void createEmptyArray() {
         int[] emptyArray = new int[100];
-        for (int i = 0; i < emptyArray.length; i++) ;
+        for (int i = 0; i < emptyArray.length; i++)
         emptyArray[i] = i + 1;
     }
 
     //12
     public static void arrayToReduce() {
         int[] array = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 11};
-        for (int i  = 0; i < array.length; i++);{
-            if (array[i] < 6) array[i] = array[i] * 2);}
-        System.out.println(array);
+        for (int i  = 0; i < array.length; i++){
+            if (array[i] < 6);
+            array[i] = array[i] * 2;
+         }
     }
 
     //13
@@ -97,7 +98,7 @@ public class Methods {
         int[] arrlen = new int[len];
         for (int i = 0; i < arrlen.length; i++){
          arrlen[i] = initialValue;}
-         return arrlen;
+        return len;
     }
 
 }
