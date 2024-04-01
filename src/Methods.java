@@ -35,21 +35,20 @@ public class Methods {
         return c >= 10 && c <= 20 ;
     }
     //№6
-    public static int checkPrintSign(int data) {
+    public static void checkPrintSign(int data) {
         System.out.println(data < 0 ? "Число отрицательное" : "Число положительное");
-        return data;
     }
     //№7
     public static boolean isPositiveNumber(int num) {
         return num < 0;
     }
     //№8
-    public static int printStringInConsole(int d) {
-        String s = "Повторяюсь";
-        for (int i = 0; i < 5; i++) {
-            System.out.println(s + "5 раз");
+    public static void printStringInConsole(String s,int a) {
+        //String s = "Повторяюсь";
+        //int a = 5;
+        for (int i = 0; i < a; i++); {
+            System.out.println(s + " "+ a +" раз");
         }
-        return d;
     }
     //9
     public static boolean isLeapYear() {

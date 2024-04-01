@@ -4,10 +4,10 @@ public class Main {
         Methods.checkSumSighned(); //2
         Methods.printColor(); //3
         Methods.compareNumbers(); //4
-        Methods.fromTenToTwenty(5, 10); //5
+        Methods.fromTenToTwenty(5, 10);//5
         Methods.checkPrintSign(20); //6
         Methods.isPositiveNumber(10);  //7
-        Methods.printStringInConsole(5);  //8
+        Methods.printStringInConsole("Повторяюсь",5);  //8
         Methods.isLeapYear(); //9
         Methods.changeNumber();  //10
         Methods.createEmptyArray(); //11
